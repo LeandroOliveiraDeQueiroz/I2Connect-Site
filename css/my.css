@@ -1,37 +1,26 @@
-
-
-
-
+/*Botoes*/
 .btn-primary {
     color: #fff;
-    background-color: #4ae900;
+    background-color: #dfdfdf;
     border-color: #0c0c0c;
 }
 
-
-
 .btn-light {
     color: #f5f5f5;
-    background-color: #1eff00;
+    background-color: #244669;
     border-color: #f8f9fa;
 }
-
-
-
 
 /* DIVISISOR PEQUENO CENTRALIZADO VERDE */
 hr.divider {
     max-width: 3.25rem;
     border-width: .2rem;
-    border-color: #0dff21;
+    border-color: #244669;
 }
-
-
 
 .bg-primary {
     background-color: #ffffff!important;
 }
-
 
 body {
     margin: 0;
@@ -39,35 +28,26 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #000000;
     text-align: left;
     background-color: #fff;
 }
 
-
-
-
-
 a {
-    color: #65f43a;
+    color: #244669;
     text-decoration: none;
     background-color: transparent;
 }
-
-
 
 .text-white {
     color: rgb(255, 255, 255)!important;
 }
 
-
 /*MUDAR DESENHOS DE COR*/
 
 .text-primary {
-    color: #05ff05!important;
+    color: #244669!important;
 }
-
-
 
 /* MASTHEADER */
 
@@ -82,37 +62,44 @@ header.masthead{
 }
 
 
+/* mouse em cima ->  sobre, servicos*/
 
-/*Cores bar no resto da pagina*/
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #244669;
+}
+
+/* Topo da pagina cor padrao ->  sobre, servicos*/
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+/* Inferior da pagina cor padrao -> Cores bar na parte inferior*/
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #8fbff0;
+}
+
+/* mouse em cima -> Cores bar no resto da pagina*/
 
 #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #e5ff00;
+    color: #244669;
 }
+
+/*Cor da bar Selecionada*/
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #244669!important;
+}
+
+
+
+
+
+/*mouse em cima -> Core I2Connect no resto da pagina */
 
 #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #f300df;
 }
-
-
-
-/* Cores bar na parte superior*/
-
-#mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
-}
-
-
-#mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(89, 65, 144, 0.7);
-    padding: 0 1rem;
-}
-
-
-/*Cor da bar Selecionada*/
-#mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #3cff00!important;
-}
-
 
 /*Cor inbovis na parte superior*/
 
@@ -123,3 +110,4 @@ header.masthead{
 #mainNav .navbar-brand:hover {
     color: #fff;
 }
+
