@@ -108,3 +108,71 @@ header.masthead{
     color: #fff;
 }
 
+
+/* .nome{
+    border: 
+} */
+.form{
+    width: 100%;
+    align-items: center;
+}
+
+.form button{
+    float: right;
+}
+
+.row2{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.form .input-line{
+    border: none;
+    border-bottom: #244669 2px solid;
+}
+/* 
+.form .first-input-line{
+    border: none;
+    border-bottom: #244669 2px solid;
+} */
+
+.campos{
+    color: #244669;
+}
+
+@media(min-width: 1024px){
+    .form .input-container{
+        width: 25%; 
+        margin-bottom: 60px;
+        float: left;
+        position: relative;
+        margin-right:7%;
+    }
+}
+
+@media(max-width: 1023px){
+    .form .input-container{
+        align-items: center;
+        /* text-align: center; */
+        margin: auto;
+        width: 75%; 
+        margin-bottom: 30px;
+    }
+}
+
+/* 
+@media(max-width: 1023px){
+    .form .input-container{
+        width: 300px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .form .first-input-container{
+        width: 300px;
+        margin-left: 5%;
+    }
+} */

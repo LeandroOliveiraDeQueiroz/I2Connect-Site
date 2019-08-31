@@ -89,9 +89,9 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-black mt-0">Uma empresa de alunos da PUC Minas com parceria da Embrapa</h2>
           <hr class="divider light my-4">
-          <p class="text-black-50 mb-4">Nossa empresa foi criada no Ideas For Milk 2018, 
-                                        evento realizado anualmente pela Embrapa para formentar 
-                                        o mercado tecnológico voltado a para Agropecuária.
+          <p class="text-black-50 mb-4">Nossa empresa foi criada no Ideas For Milk 2018,
+            evento realizado anualmente pela Embrapa para formentar
+            o mercado tecnológico voltado a para Agropecuária.
           </p>
           <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
         </div>
@@ -161,25 +161,41 @@
 
 
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Entre em contato com a gente!</h2>
+      <div class="row2 justify-content-center">
+        <div class="col-lg-8 text-center" style="margin-bottom: 28px">
+          <h2 class="mt-0" style="margin-bottom:124px">Entre em contato com a gente!</h2>
           <hr class="divider my-4">
           <!-- <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we
             will get back to you as soon as possible!</p> -->
         </div>
       </div>
-      <div class="row align-items-center ">
-        <!-- <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
-        </div> -->
-        <div class="col-lg-4 mr-auto text-center" style="margin: auto">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@inbovis.com.br">contato@inbovis.com.br</a>
+      <form action="testmail.php" method="POST" class="form">
+        <div>
+          <div class="input-container">
+              <label for="name">Nome:</label>
+              <input class="input-line" style="width:100%" type="text" name="nome" id="name">
+          </div>
+
+          <div class="input-container">
+            <label id="campos" for="email">E-mail:</label>
+              <input class="input-line" style="width:100%" type="email" name="email" id="email">
+          </div>
+
+          <div class="input-container">
+            <label id="campos" for="numero">Número:</label>
+              <input class="input-line" style="width:100%" type="text" name="numero" id="number">
+          </div>
         </div>
-      </div>
+
+        <div style="margin-bottom: 30px">
+          <label for="mensagem" class="required">Mensagem:</label>
+            <textarea style="width:100%; border-color: #244669;border-width: 2px" id="message"></textarea>
+        </div>
+
+        <div">
+          <button class="btn btn-light btn-xl" type="submit" name="subimit" id="send-form">Enviar</button>
+        </div>
+      </form>
     </div>
   </section>
 
