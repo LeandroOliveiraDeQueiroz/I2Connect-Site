@@ -1,20 +1,36 @@
 <?php
+if(!isset($_POST['submit'])){
+    echo "error, you need to submit the form";
+}
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
-error_reporting(E_ALL);
+// error_reporting(E_ALL);
 
-$from = "contato@inbovis.com.br";
+$name = $_POST['name'];
+$user_email = $_POST['email'];
+$message = $_POST['message'];
 
-$to = "trincaoqueiroz@gmail.com";
+if(empty($name) || empty($user_email)){
+    echo "Name and email are mandatory!";
+    exit;
+}
 
-$subject = "Verificando o correio do PHP";
+// $email_fomr
 
-$message = "O correio do PHP funciona bem";
+$from = "contato@inbovis.com.br"; // Email that send the message on header
+$to = "contato@inbovis.com.br"; // Email that wil recive the message
+$headers = "De: $from \r\n";
+$subject = "Verificando o correio do PHP 2.0 por $name"; // Equals topic
 
-$headers = "De:". $from;
+$email_body = "Novo email enviado a partir do site inbovis.com.br.\n".
+                "Usuario: $name\n".
+                "Email: $user_email\n".
+                "Mensagem:\n $message";
 
-mail($to, $subject, $message, $headers);
+
+
+mail($to, $subject, $email_body, $headers);
 
 echo "A mensagem de e-mail foi enviada.";
 
